@@ -9,9 +9,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Angular_git';
-  constructor(){
-    console.log("Funciones de prueba");
-    console.warn("Advertencia");
-    console.log("pruebas de conflictos");
+  constructor() {
+    console.log("nuevas funciones");
+    console.warn("cuidado");
+    console.log("prueba de confictlos")
   }
 }
