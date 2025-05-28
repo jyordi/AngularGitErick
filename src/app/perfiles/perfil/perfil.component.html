@@ -1,1 +1,11 @@
-<p>perfil works!</p>
+<div class="profile-card">
+  <img [src]="usuario.fotoUrl" alt="Foto de perfil">
+  <h2>{{ usuario.nombre }}</h2>
+  <p>Correo: {{ usuario.correo }}</p>
+  <p>Ubicación: {{ usuario.ubicacion }}</p>
+  <span class="user-type">{{ usuario.tipo }}</span>
+  <div class="social-links">
+    <a *ngIf="usuario.web" [href]="usuario.web" target="_blank">🌐</a>
+    <a *ngIf="usuario.email" [href]="'mailto:' + usuario.email">📧</a>
+  </div>
+</div>
