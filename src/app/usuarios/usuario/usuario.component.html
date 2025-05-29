@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Lista de Usuarios</h1>
+  <button class="btn btn-add" (click)="agregarUsuario()">Agregar Usuario</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Correo electrónico</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.nombre }}</td>
+        <td>{{ usuario.correo }}</td>
+        <td>
+          <button class="btn btn-view" (click)="verUsuario(usuario)">Ver</button>
+          <button class="btn btn-edit" (click)="editarUsuario(usuario)">Editar</button>
+          <button class="btn btn-delete" (click)="eliminarUsuario(usuario)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
